@@ -1,0 +1,29 @@
+<div>
+
+    <h1>List of all users</h1>
+
+    <table id="users_table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>EMAIL/LOGIN</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>ROLES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="u in showUsersCtrl.users">
+                <td>{{u.id}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.firstName}}</td>
+                <td>{{u.lastName}}</td>
+                <td>{{u.roles}}</td>
+                <td><a ng-href="#!profile/show_users/details/{{u.id}}">Edit</a></td>
+                <td><a ng-href="#!profile/show_users/delete_user/{{u.id}}">Delete</a></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>

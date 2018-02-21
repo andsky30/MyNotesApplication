@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="main_nav_bar">
+<a href="#!register" ng-show="!authenticated"> Register </a>
+<a href="#!login" ng-show="!authenticated">Login </a>
+<a href="#!profile">Profile </a>
+</div>
+
+<div ng-view></div>
+
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/notes.js"></script>
+<script type="text/javascript" src="js/users.js"></script>
+<script type="text/javascript" src="js/birthdays.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div id="profile_nav_bar" ng-show="authenticated">
+    <a href="#!profile/show_users">Show users </a>
+    <a href="#!profile/my_account">My account </a>
+    <a href="#!profile/notes">Notes</a>
+    <a href="#!profile/birthdays">Birthdays</a>
+    <a href="#!login">Logout</a>
+
+    <h1>User profile - only authenticated users has permit</h1>
+</div>
+
+<div ng-show="!authenticated">
+
+    <h1>You are not authenticated!</h1>
+</div>

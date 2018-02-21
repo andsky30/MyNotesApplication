@@ -1,0 +1,30 @@
+<div>
+
+    <a href="#!profile/birthdays/add_birthday">Add new birthday</a>
+
+    <h1>List of birthdays</h1>
+
+    <table id="birthdays_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>PERSON</th>
+            <th>DATE OF BIRTH</th>
+            <th>AGE</th>
+            <th>DAYS UNTIL NEXT BIRTHDAY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="b in birthCtrl.birthdays">
+            <td>{{b.id}}</td>
+            <td>{{b.birthDayPerson}}</td>
+            <td>{{b.dateOfBirth}}</td>
+            <td>{{b.age}}</td>
+            <td>{{b.daysLeftUntilBirthday}}</td>
+            <td><a ng-href="#!profile/show_users/details/{{b.id}}">Edit</a></td>
+            <td><a ng-href="#!profile/birthdays/birthday/{{b.id}}/delete">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

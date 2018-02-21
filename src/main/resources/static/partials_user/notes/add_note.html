@@ -1,0 +1,9 @@
+<div>
+    <h1>Add new note</h1>
+    <form>
+        <textarea id="note_text_area"  maxlength="500" rows="5" cols="50" placeholder="Note text" ng-model="addDelNoteCtrl.note.text">
+        </textarea>
+        <br>
+        <button id="add_note_button" ng-click="addDelNoteCtrl.saveNote()">Add note</button>
+    </form>
+</div>

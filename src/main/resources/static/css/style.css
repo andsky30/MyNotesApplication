@@ -1,0 +1,61 @@
+body
+{
+    background-color: #e2f1c4;
+}
+
+a
+{
+    font-size: 130%;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: red;
+}
+
+
+#users_table
+{
+    width: 700px;
+    text-align: left;
+}
+
+#birthdays_table
+{
+    width: 900px;
+    text-align: left;
+}
+
+.login_input, .register_input, .birthday_input
+{
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#login_submit, #add_note_button, #register_button ,#add_birthday_button
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #7dd675;
+    margin-bottom: 15px;
+}
+
+#note_text_area
+{
+    width: 300px;
+    height: 150px;
+    max-width: 400px;
+    max-height: 200px;
+}
+
+#profile_nav_bar a, #main_nav_bar a
+{
+
+    margin-right: 20px;
+}

@@ -1,0 +1,12 @@
+<div>
+
+    <a href="#!profile/notes/add_note">Add new note</a>
+
+    <h1>List of notes</h1>
+    <div>
+        <div ng-repeat="n in notesCtrl.notes">
+            <a ng-href="#!profile/notes/note/{{n.id}}">{{n.text}} </a>
+        </div>
+    </div>
+
+</div>
